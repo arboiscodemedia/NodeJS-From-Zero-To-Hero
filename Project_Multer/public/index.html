@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Upload Page</title>
+    </head>
+    <body>
+          <form method="POST" action="/single-upload" enctype="multipart/form-data">
+            <div>
+                <label>Upload single image</label>
+                <input type = "file" name ="single-file">
+            </div>
+            <div>
+                <input type="submit" value="Upload"/>
+            </div>
+          </form>
+
+          <hr/>
+
+          <form method="POST" action="/multiple-upload" enctype="multipart/form-data">
+            <div>
+                <label>Upload multiple image</label>
+                <input type = "file" name ="multiple-files" required multiple>
+            </div>
+            <div>
+                <input type="submit" value="Upload"/>
+            </div>
+          </form>
+
+          
+
+
+    </body>
+</html>
